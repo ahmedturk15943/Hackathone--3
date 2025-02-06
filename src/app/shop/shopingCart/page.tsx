@@ -135,8 +135,8 @@ const ShoppingCart: React.FC = () => {
           </div>
         </div>
       </main>
-{/*       <ProductCards/>
-      <ProductDetail/> */}
+{/*       <ProductCards/> */}
+      <ProductDetail/> 
 
     </div>
   );
