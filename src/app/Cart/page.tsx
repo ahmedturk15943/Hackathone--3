@@ -205,7 +205,7 @@ const CartPage = () => {
   );
 
   const handleCheckout = () => {
-    router.push('/checkout'); // Assuming /checkout is your checkout page route
+    router.push('/checkoutt'); // Assuming /checkout is your checkout page route
   };
 
   return (
