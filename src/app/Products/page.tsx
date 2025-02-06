@@ -52,7 +52,7 @@ const ProductList: React.FC = () => {
       <h1 className="text-center text-white text-2xl font-bold mb-6">Product List</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {products.map((product) => (
-          <Link href={`/Products/${product._id}`} key={product._id}>
+          <Link href={`/products/${product._id}`} key={product._id}>
             <div className="border rounded-lg shadow-lg p-4 hover:shadow-2xl transition-all cursor-pointer">
               {product.imageUrl && (
                 <Image
