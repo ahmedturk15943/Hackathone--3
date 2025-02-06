@@ -201,7 +201,7 @@ const ProductDetail: React.FC = () => {
 
     localStorage.setItem('cart', JSON.stringify(currentCart));
 
-    router.push('/Cart');
+    router.push('/cart');
   };
 
   if (!product) {
