@@ -1,10 +1,11 @@
 'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import ProductCards from '@/app/products/page';
 
+// import ProductCards from '@/app/products/page';     
 
-const initialCartItems = [
+import ProductCards from '@/app/products/[id]/page';
+const initialCartItems = [ 
   { name: "Burger", price: 10.99, quantity: 2, image: "/cart1.png" },
   { name: "Fresh Lime", price: 3.49, quantity: 1, image: "/cart2.png" },
   { name: "Pizza", price: 9.99, quantity: 4, image: "/cart3.png" },

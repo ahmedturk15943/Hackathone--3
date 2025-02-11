@@ -13,24 +13,22 @@ export default function Navbar() {
   const router = useRouter();
 
   const menuItems = [
-    { name: "Home", href: "/", active: activeLink === "/" },
+    { name: "Home", href: "/", active: activeLink === "/" },                          
     { name: "Menu", href: "/menu", active: activeLink ==="/menu" },
-    { name: "Blog", href: "/blog", active: activeLink === "/blog" },
+    { name: "Blog", href: "/blog", active: activeLink === "/blog" }, 
     { name: "Pages", href: "/pages", active: activeLink === "/pages" },
-    { name: "About", href: "/about", active: activeLink === "/about" },
+    { name: "About", href: "/about", active: activeLink === "/about" },                   
     { name: "Shop", href: "/shop", active: activeLink === "/shop" },
     { name: "Chef", href: "/ourChefs", active: activeLink === "/ourChefs" },
     { name: "Foods", href: "/products", active: activeLink === "/products" },
-
-
     { name: "Contact", href: "/contact", active: activeLink === "/contact" },
-  ];
+  ];                     
 
   useEffect(() => {
     const currentPath = window.location.pathname;
     setActiveLink(currentPath);
   }, [isMenuOpen]);
-
+           
   const handleSearchClick = () => {
     if (searchQuery.trim()) {
       router.push(`/search?q=${searchQuery}`);
@@ -38,7 +36,7 @@ export default function Navbar() {
   };
 
   const toggleSearchBar = () => {
-    setIsSearchBarVisible(!isSearchBarVisible); // Toggle visibility of search bar
+    setIsSearchBarVisible(!isSearchBarVisible); // Toggle visibility of search bar    
   };
 
   return (
@@ -54,7 +52,7 @@ export default function Navbar() {
           className="lg:hidden text-white z-10"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}       
         </button>
         <ul className={` 
           fixed inset-0 bg-[#0D0D0D] flex flex-col items-center justify-center gap-6
@@ -80,10 +78,10 @@ export default function Navbar() {
           {/* Search Icon, Toggles the SearchBar visibility */}
           <button
             onClick={toggleSearchBar} // Toggles the search bar visibility
-            className="text-white hover:text-[#FF9F0D] transition-colors"
+            className="text-white hover:text-[#FF9F0D] transition-colors"       
           >
             <Search size={24} />
-          </button>
+          </button>   
           
           {/* Optionally, SearchBar can still be toggled, but it’s hidden by default */}
           {isSearchBarVisible && (
