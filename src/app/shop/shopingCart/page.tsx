@@ -136,7 +136,8 @@ const ShoppingCart: React.FC = () => {
           </div>
         </div>
       </main>
-      <ProductCards/>
+    <ProductCards/>
+    
 
     </div>
   );
